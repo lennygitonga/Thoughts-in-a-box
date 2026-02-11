@@ -1,0 +1,42 @@
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.feature h2 {
+  color: #06b6d4;
+  margin-bottom: 1rem;
+  font-size: larger;
+  text-align: center;
+  font-weight: 400;
+}
+
+.feature p {
+  color: #555;
+  line-height: 1.6;
+}
+
+#heading {
+ text-align: center;
+ font-size: x-large;
+ font-weight: bold;
+}
+
+.paragraph {
+    text-align: center;
+    margin-bottom: 3rem;
+}
