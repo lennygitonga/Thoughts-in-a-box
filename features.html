@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="features.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
 
      <header class="sticky inset-0 z-50 border-b border-slate-100 bg-cyan-100 backdrop-blur-lg">
         <nav class="mx-auto flex max-w-6xl gap-8 px-4 transition-all duration-200 ease-in-out lg:px-4 py-4 h-16">
@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-    <main class="features">
+    <main class="features flex-1">
   <section class="intro">
     <h1 id="heading">Features</h1>
     <p class="paragraph">Discover the tools and guidance that make Thoughts In Box a supportive space for reflection and growth.</p>
@@ -80,85 +80,78 @@
   </section>
 </main>
 
-<footer>
-        <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-            <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="">
-                    <img src="assets\TIAB intro.jfif" alt="ghibli art logo">
-                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Thoughts In a Box</span>
-                    </a>
-                    <div class="lg:max-w-sm">
-                        <p class="text-sm text-gray-800 pl-5">Organizing the mental clutter
-                        </p>
-                    </div>
+<footer class="border-t-2 border-gray-200 mt-12">
+    <div class="px-4 pt-8 pb-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="grid gap-8 mb-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div>
+                <div class="flex items-center">
+                    <img src="assets\TIAB intro.jfif" alt="ghibli art logo" width="40" class="rounded">
+                    <span class="ml-2 text-lg font-bold tracking-wide text-gray-800 uppercase">Thoughts In a Box</span>
                 </div>
-
-                <div class="space-y-2 text-sm">
-                    <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
-                    <div class="flex">
-                        <p class="mr-1 text-gray-800">Phone:</p>
-                        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
-                            class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+254-112-982-436</a>
-                    </div>
-                    <div class="flex">
-                        <p class="mr-1 text-gray-800">Email:</p>
-                        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email"
-                            class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@thoughts
-                            in a box.mail</a>
-                    </div>
-                    <div class="flex">
-                        <p class="mr-1 text-gray-800">Address:</p>
-                        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
-                            aria-label="Our address" title="Our address"
-                            class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                            546-0100 kilimani, Genre Tower
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
-                    <div class="flex items-center mt-1 space-x-3">
-                        <a href="/"
-                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                        <a href="/"
-                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                            <ion-icon name="logo-whatsapp"></ion-icon>
-                        </a>
-                        <a href="/"
-                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </div>
-                    <p class="mt-4 text-sm text-gray-500">
-                        to get proffessional help contact us
-                    </p>
+                <div class="lg:max-w-sm mt-2">
+                    <p class="text-sm text-gray-600 pl-12">Organizing the mental clutter</p>
                 </div>
             </div>
-            <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-                <p class="text-sm text-gray-600">
-                    © Copyright 2026 Thoughts In a Box. All rights reserved.
+
+            <div class="space-y-2 text-sm">
+                <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+                <div class="flex">
+                    <p class="mr-1 text-gray-700">Phone:</p>
+                    <a href="tel:+254-112-982-436" aria-label="Our phone" title="Our phone"
+                        class="transition-colors duration-300 text-cyan-600 hover:text-teal-500">+254-112-982-436</a>
+                </div>
+                <div class="flex">
+                    <p class="mr-1 text-gray-700">Email:</p>
+                    <a href="mailto:info@thoughtsinabox.mail" aria-label="Our email" title="Our email"
+                        class="transition-colors duration-300 text-cyan-600 hover:text-teal-500">info@thoughtsinabox.mail</a>
+                </div>
+                <div class="flex">
+                    <p class="mr-1 text-gray-700">Address:</p>
+                    <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
+                        aria-label="Our address" title="Our address"
+                        class="transition-colors duration-300 text-cyan-600 hover:text-teal-500">
+                        546-0100 Kilimani, Genre Tower
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
+                <div class="flex items-center mt-2 space-x-3 text-xl">
+                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-cyan-500">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-cyan-500">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-cyan-500">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+                <p class="mt-3 text-sm text-gray-600">
+                    To get professional help contact us
                 </p>
-                <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-                    <li>
-                        <a href="/"
-                            class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
-                    </li>
-                    <li>
-                        <a href="/"
-                            class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
-                            Policy</a>
-                    </li>
-                    <li>
-                        <a href="/"
-                            class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms
-                            &amp; Conditions</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </footer>
+
+        <div class="flex flex-col-reverse justify-between pt-4 pb-4 border-t border-gray-200 lg:flex-row">
+            <p class="text-sm text-gray-600">
+                © Copyright 2026 Thoughts In a Box. All rights reserved.
+            </p>
+            <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+                <li>
+                    <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-cyan-600">F.A.Q</a>
+                </li>
+                <li>
+                    <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-cyan-600">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-cyan-600">Terms &amp; Conditions</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
