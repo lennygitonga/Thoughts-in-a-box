@@ -46,7 +46,7 @@ We provide an accessible, affordable, and private digital platform that meets us
 
 ### **Privacy First**
 - End-to-end encryption
-- HIPAA-compliant data handling
+- Compliant data handling
 - Anonymous usage option
 - No data selling - ever
 
