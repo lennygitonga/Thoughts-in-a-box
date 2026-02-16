@@ -8,37 +8,108 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-cyan-100 backdrop-blur-lg">
+        <nav class="mx-auto max-w-6xl px-6 py-3 lg:px-8">
+            <div class="flex items-center justify-between">
+                
+                
+                <div class="flex items-center gap-3">
+                    <img src="assets\TIAB intro.jfif" alt="ghibli peaceful art" width="40" class="rounded-lg">
+                    <span class="text-lg sm:text-xl font-bold text-gray-800 tracking-tight">Thoughts In a Box</span>
+                </div>
 
-     <header class="sticky top-0 z-50 border-b border-slate-100 bg-cyan-100/95 backdrop-blur-lg">
-        <nav class="mx-auto flex max-w-6xl gap-8 px-4 transition-all duration-200 ease-in-out lg:px-4 py-4 h-16">
-            <div class="relative flex justify-between items-center">
-                <img src="assets\TIAB intro.jfif" alt="ghibli peaceful art" width="40">
-                  <span class="text-xl font-bold text-gray-800 tracking-tight">Thoughts In a Box</span>
-            </div>
-            <ul class="hidden items-center justify-center gap-6 md:flex mx-auto">
-                <li class="pt-1.5 font-dm text-lg font-medium text-gray-700 hover:text-teal-400 ">
-                    <a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a>
-                </li>
-                <li class="pt-1.5 font-dm text-lg font-medium text-gray-700">
-                    <a href="features.html"><ion-icon name="book-outline"></ion-icon>Features</a>
-                </li>
-                <li class="pt-1.5 font-dm text-lg font-medium text-gray-700">
-                    <a href="resources.html"><ion-icon name="bag-handle-outline"></ion-icon>Resources</a>
-                </li>
-                <li class="pt-1.5 font-dm text-lg font-medium text-gray-700">
-                    <a href="about.html"><ion-icon name="briefcase-outline"></ion-icon>About</a>
-                </li>
-                <li class="pt-1.5 font-dm text-lg font-medium text-gray-700">
-                    <a href="contact.html"><ion-icon name="headset-outline"></ion-icon>Contact</a>
-                </li>
-            </ul>
-            <div class="hidden items-center justify-center gap-6 md:flex">
-                <a href="signup.html"
-                    class="rounded-md bg-gradient-to-r from-cyan-300 to-teal-400 px-3 py-1.5 font-dm text-md font-medium text-white shadow-md shadow-green-400/50 transition-transform duration-200 ease-in-out hover:scale-[1.03]">Sign
-                    up for free
-                </a>
-            </div>
+               
+                <ul class="hidden md:flex items-center gap-6">
+                    <li>
+                        <a href="index.html" class="flex items-center gap-2 text-base font-medium text-gray-700 hover:text-teal-500 transition-colors">
+                            <ion-icon name="home-outline"></ion-icon>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="features.html" class="flex items-center gap-2 text-base font-medium text-gray-700 hover:text-teal-500 transition-colors">
+                            <ion-icon name="book-outline"></ion-icon>
+                            <span>Features</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources.html" class="flex items-center gap-2 text-base font-medium text-gray-700 hover:text-teal-500 transition-colors">
+                            <ion-icon name="bag-handle-outline"></ion-icon>
+                            <span>Resources</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="flex items-center gap-2 text-base font-medium text-gray-700 hover:text-teal-500 transition-colors">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="flex items-center gap-2 text-base font-medium text-gray-700 hover:text-teal-500 transition-colors">
+                            <ion-icon name="headset-outline"></ion-icon>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
 
+               
+                <div class="hidden md:flex">
+                    <a href="signup.html"
+                        class="rounded-lg bg-gradient-to-r from-cyan-400 to-teal-500 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-cyan-500/30 transition-all duration-200 hover:scale-105">
+                        Sign up for free
+                    </a>
+                </div>
+
+                
+                <div class="md:hidden">
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+                    <label for="menu-toggle" class="cursor-pointer text-gray-700 hover:text-teal-500 transition-colors">
+                        <ion-icon name="menu-outline" class="text-3xl"></ion-icon>
+                    </label>
+                    
+                    
+                    <div class="peer-checked:block hidden absolute left-0 right-0 top-full bg-cyan-50 border-t border-slate-200 shadow-lg">
+                        <ul class="flex flex-col px-6 py-4 space-y-3">
+                            <li>
+                                <a href="index.html" class="flex items-center gap-3 text-base font-medium text-gray-700 hover:text-teal-500 py-2 transition-colors">
+                                    <ion-icon name="home-outline" class="text-xl"></ion-icon>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="features.html" class="flex items-center gap-3 text-base font-medium text-gray-700 hover:text-teal-500 py-2 transition-colors">
+                                    <ion-icon name="book-outline" class="text-xl"></ion-icon>
+                                    <span>Features</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="resources.html" class="flex items-center gap-3 text-base font-medium text-gray-700 hover:text-teal-500 py-2 transition-colors">
+                                    <ion-icon name="bag-handle-outline" class="text-xl"></ion-icon>
+                                    <span>Resources</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="flex items-center gap-3 text-base font-medium text-gray-700 hover:text-teal-500 py-2 transition-colors">
+                                    <ion-icon name="briefcase-outline" class="text-xl"></ion-icon>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex items-center gap-3 text-base font-medium text-gray-700 hover:text-teal-500 py-2 transition-colors">
+                                    <ion-icon name="headset-outline" class="text-xl"></ion-icon>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                            <li class="pt-2">
+                                <a href="signup.html"
+                                    class="block text-center rounded-lg bg-gradient-to-r from-cyan-400 to-teal-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg">
+                                    Sign up for free
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
